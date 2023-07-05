@@ -49,8 +49,8 @@ class DialogHelper {
       TextStyle? actionTextStyle;
       if (isDangerousAction) {
         actionButtonStyle = TextButton.styleFrom(
-            backgroundColor: Colors.red, onSurface: Colors.white);
-        actionTextStyle = theme.textTheme.button!.copyWith(color: Colors.white);
+            backgroundColor: Colors.red, disabledForegroundColor: Colors.white.withOpacity(0.38));
+        actionTextStyle = theme.textTheme.labelLarge!.copyWith(color: Colors.white);
       }
 
       return showDialog<bool>(
